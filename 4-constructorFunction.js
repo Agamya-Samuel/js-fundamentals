@@ -7,6 +7,7 @@
 // 4. Constructor Function returns the object implicitly, without explicitly writing "return" keyword.
 // 5. Constructor Function are a more concise way of creating => "Factory Functions".
 
+// Example 1
 function Person(name) {
 	this.name = name;
 	this.talk = () => {
@@ -21,3 +22,15 @@ const sam = new Person('Sam');
 console.log(sina.talk());
 console.log(ben.talk());
 console.log(sam.talk());
+
+// Example 2
+function SuperElement(type, content) {
+	this.el = document.createElement(type);
+	this.el.innerText = content;
+	document.body.append(this.el);
+	this.el.addEventListener('click', () => {
+		console.log(this.el);
+	});
+}
+
+const h1 = new SuperElement('h1', 'Hellooo!');
