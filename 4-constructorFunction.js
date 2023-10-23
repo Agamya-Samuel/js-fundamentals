@@ -41,3 +41,5 @@ const array = ['a', 'b', 'c'];
 const myElements = array.map((item) => {
 	return new SuperElement('p', item);
 });
+
+console.log(myElements); // works only on browser, not with node.js
