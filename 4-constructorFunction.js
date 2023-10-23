@@ -6,6 +6,7 @@
 // 3. Constructor Function automatically creates the "this" object [this = {}] behind the scene.
 // 4. Constructor Function returns the object implicitly, without explicitly writing "return" keyword.
 // 5. Constructor Function are a more concise way of creating => "Factory Functions".
+// 6. No need for retunr statemnet, as constructor function returns the object automatically.
 
 // Example 1
 function Person(name) {
