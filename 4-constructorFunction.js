@@ -34,3 +34,10 @@ function SuperElement(type, content) {
 }
 
 const h1 = new SuperElement('h1', 'Hellooo!');
+
+// Example 3
+
+const array = ['a', 'b', 'c'];
+const myElements = array.map((item) => {
+	return new SuperElement('p', item);
+});
