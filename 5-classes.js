@@ -57,3 +57,20 @@ Me.speak() = function () {
 // You.speak(); also exists cause it shares the same copy of the function
 
 // One advantage of using Factory function is data privacy, Factory function directly returns the object
+
+// Classes are nothing but "Syntactical Sugar" over Constructor function
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+  sayHello() {
+    console.log(`Hello, my name is ${this.name}.`);
+  }
+}
+
+const person1 = new Person("Alice", 30);
+const person2 = new Person("Bob", 25);
+
+person1.sayHello(); // Output: Hello, my name is Alice.
+person2.sayHello(); // Output: Hello, my name is Bob.
